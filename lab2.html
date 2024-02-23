@@ -38,7 +38,8 @@
 
   <th>
   <script>
-      document.body.style.background = 'gray'
+
+      document.body.style.background = '#A0AECD'
       '<th>'
       for (let i = 1;i <= 10; i++){
         document.write('<th>' + i + '</th>')
@@ -53,6 +54,18 @@
         document.write('<tr>'+'</tr>')
         n++
       }
+
+
+      let fons = document.querySelectorAll('th')
+      fons.forEach(fon => {
+          fon.addEventListener('mouseover',function(){
+            fon.style.backgroundColor = '#D76F30'
+          })
+          fon.addEventListener('mouseout',function(){
+            fon.style.backgroundColor = ''
+          })
+              })
+
   </script>
   
 
